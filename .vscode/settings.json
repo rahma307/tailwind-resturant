@@ -1,0 +1,20 @@
+{
+    "workbench.colorTheme": "Cute Dark",
+    "workbench.iconTheme": "vscode-celestial-magic-girl-icon-theme",
+    "files.autoSave": "afterDelay",
+    "editor.mouseWheelZoom": true,
+    "workbench.editor.empty.hint": "hidden",
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "editor.experimental.preferTreeSitter.regex": true,
+
+    // 👇 دول مهمين للـ Tailwind
+    "tailwindCSS.includeLanguages": {
+        "html": "html",
+        "javascript": "javascript"
+    },
+    "tailwindCSS.emmetCompletions": true,
+    "tailwindCSS.experimental.classRegex": [
+        "class\\s*=\\s*\"([^\"]*)\""
+    ],
+    "liveServer.settings.port": 5506
+}
