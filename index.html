@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#0c0b09]">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+       <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="tailwind.css">
+    
+</head>
+<body class=" overflow-x-hidden">
+ <div class="hidden bg-black/80 gal w-full fixed h-full top-0 z-50">
+  <button class="text-white font-medium text-3xl ml-10 mt-6 close">X</button>
+  
+  <div class="flex items-center justify-center h-full relative">
+   
+    <p class="text-white text-3xl absolute left-6 top-1/2 -translate-y-1/2 cursor-pointer firstar">&lt;</p>
+ 
+    <img src="" alt="" class="max-w-[80%] max-h-[80%] mx-auto">
+    
+     
+    <p class="text-white text-3xl absolute right-6 top-1/2 -translate-y-1/2 cursor-pointer lastar">&gt;</p>
+  </div>
+</div>
+
+    <section id="hero" class="flex flex-col min-h-screen w-full hero-bg  mx-0  bg-blend-multiply">
+     <div class="fixed w-full z-20">
+        <div class="cont flex sm:ml-48  ml-20 gap-8 my-2">
+          <div class="mail">
+            <i class="fa-regular fa-envelope text-primary "></i>
+            <a href="" class="text-default-color">contact@example.com</a>
+          </div>
+                    <div class="mail">
+             <i class="fa-solid fa-mobile-screen fa-2x  text-primary text-base"></i>
+            <a href="" class="text-default-color">+1 5589 55488 55</a>
+          </div>       
+      </div>
+  <header class='flex flex-col  py-4 px-10 sm:px-10 bg-black/60 font-sans min-h-[70px] tracking-wide relative z-50  items-center w-full transition-all duration-500 mt-4'>
+      <div class='flex flex-wrap items-center gap-11 w-full justify-around mx-auto '>
+        <a href="https://readymadeui.com">
+          <h3 class="text-3xl font-bold text-white font-logo ">Restaurantly</h3>
+        </a>
+
+        <div
+          class=' flex max-lg:hidden max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50  '>
+          <div
+            class="flex  max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50 mx-0 items-center  ul" >
+
+            <ul class='lg:flex lg:gap-x-8 max-lg:space-y-2 mr-20 xl:mr-72'>
+              <li class='mb-6 hidden max-lg:block'>
+                <a href="javascript:void(0)"><img src="https://readymadeui.com/readymadeui.svg" alt="logo" class='w-36' />
+                </a>
+              </li>
+              <li class='max-lg:border-b max-lg:py-3'>
+                <a href='javascript:void(0)'
+                  class='hover:text-primary text-gray-100 block font-normal text-[14px]'>Home</a>
+              </li>
+              <li class='max-lg:border-b max-lg:py-3'><a href='javascript:void(0)'
+                class='hover:text-primary text-gray-100 block font-normal text-[14px]'>Shop</a>
+              </li>
+              <li class='max-lg:border-b max-lg:py-3'><a href='javascript:void(0)'
+                class='hover:text-primary text-gray-100 block font-normal text-[14px]'>Sale</a>
+              </li>
+              <li class='max-lg:border-b max-lg:py-3'><a href='javascript:void(0)'
+                class='hover:text-primary text-gray-100 block font-normal text-[14px]'>Manage</a>
+                        <li class='max-lg:border-b max-lg:py-3'>
+                <a href='javascript:void(0)'
+                  class='hover:text-primary text-gray-100 block font-normal text-[14px]'>Home</a>
+              </li>
+              <li class='max-lg:border-b max-lg:py-3'><a href='javascript:void(0)'
+                class='hover:text-primary text-gray-100 block font-normal text-[14px]'>Shop</a>
+              </li>
+              <li class='max-lg:border-b max-lg:py-3'><a href='javascript:void(0)'
+                class='hover:text-primary text-gray-100 block font-normal text-[14px]'>Sale</a>
+              </li>
+              <li class='max-lg:border-b max-lg:py-3'><a href='javascript:void(0)'
+                class='hover:text-primary text-gray-100 block font-normal text-[14px]'>Manage</a>
+              </li>
+            </ul>
+          </div>
+            <button class='px-4 py-2.5 text-sm  font-bold text-default-color border-2 rounded-full border-primary   transition-all ease-in-out duration-300 bg-transparent hover:text-slate-50'>BOOK A TABLE</button>
+        </div>
+          
+         
+          <button class='lg:hidden p-1 rounded-sm' id="menu-btn">
+            <svg class="w-7 h-7" fill="#fff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+   
+      <div class="menu-nav hidden bg-slate-100/15 bg w-full mt-4 p-5 ">
+         
+        <ul class="  flex-col items-center justify-center gap-4 text-lg text-gray-100 lg:flex lg:flex-row lg:gap-8 font-medium">
+          <li><a href="javascript:void(0)" class="hover:text-primary  text-gray-100 ">Home</a></li>
+          <li><a href="javascript:void(0)" class="hover:text-primary  text-gray-100">Shop</a></li>
+          <li><a href="javascript:void(0)" class="hover:text-primary  text-gray-100">Sale</a></li>
+          <li><a href="javascript:void(0)" class="hover:text-primary  text-gray-100">Manage</a></li>
+        </ul>
+      </div>
+    </header> 
+        </div>
+     </div>
+  <div class=" px-16 xl:px-28 mt-96   self-center  lg:self-stretch  lg:ml-52  flex flex-col " >
+      <h1 class="text-[36px] md:text-5xl text-white font-logo font-black  text-wrap  lg:text-start text-center mb-4">
+        Welcome to <span class="text-primary"> Restaurantly</span>
+   </h1>
+   <p class="text-2xl text-center lg:text-start font-normal text-default-color mt-2 ">Delivering great food for more than 18 years!</p>
+      <div class="buttons mx-auto lg:mx-0">
+         <button class="px-[30px] py-2 text-sm rounded-full font-normal text-zinc-50 mt-8 border-2 border-primary transition-all ease-in-out duration-300 hover:bg-primary/8">OUR MENU</button>
+    <button class="px-[30px] ml-3 py-2 text-sm rounded-full font-normal text-zinc-50 mt-8 border-2 border-primary transition-all ease-in-out duration-300 hover:bg-primary/8">BOOK A TABLE</button>
+
+      </div>
+  </div>
+  
+</section> 
+<section class="about about-bg    ">
+  <div class="container   mx-auto   px-10">
+      <div class="row-col   lg:flex-row-reverse  "  >
+        <div class="w-full lg:w-7/12   lg:mb-20  mt-16 lg:mx-auto transition-transform duration-[700ms] ease-in-out transform hover:scale-[1.05] hover:-translate-y-[0.1rem] lg:pl-14 ">
+          <img src="./img/about.jpg" alt="" class="w-full h-full border-8 border-slate-600/40 ">
+        </div>
+
+        <div class="w-full lg:w-5/12  lg:mt-20  lg:mb-10 ">
+            <h2 class="text-3xl font-bold text-white mt-4 lg:mt-0 mb-4  font-logo lg:text-start">
+              Voluptatem dignissimos provident
+            </h2>
+            <p class="text-gray-500 font-normal text-base ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <ul class="list-none px-0">
+          <li class="  text-slate-300 text-base flex "> 
+            <img src="./img/Adobe Express - file.png" alt="" class="w-16 -ml-6">
+            <p class="mt-1">
+                 Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </li>
+            <li class="  text-slate-300 text-base flex   "> 
+            <img src="./img/Adobe Express - file.png" alt="" class="w-16 -ml-6">
+            <p class="mt-1">
+                 Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </li>
+            <li class="  text-slate-300 text-base flex"> 
+            <img src="./img/Adobe Express - file.png" alt="" class="w-16 -ml-6">
+            <p class="mt-1">
+                 Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </li>
+
+            </ul>
+            <p class="  text-slate-300 text-lg flex mt-5 mb-24 lg:mb-1">
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+            </p>
+        </div>
+      </div>
+  </div>
+</section> 
+<section class="why-us bg-[#0c0b09] ">
+  <div class="container mx-auto   py-9 px-5">
+     <p class="text-default-color text-sm font-normal  font-logo   ">WHY US <span class="border-t-2 border-primary w-[9rem] inline-block ml-2"></span></p>
+     <h2 class="text-primary text-4xl font-semibold font-logo mt-2" >Why Choose Our Restaurant</h2>
+     <div class="row-col gap-9 mt-6">
+      <div class="w-full lg:w-[calc(90%/3)] card-bg p-9 mt-9 py-12 group hover:bg-primary duration-150 ease-in-out   relative">
+        <h3 class="text-primary text-[28px] font-bold mb-4 group-hover:text-black   transition-transform duration-500 ease-in-out group-hover:-translate-y-4">01</h3>
+        <p class="font-semibold text-2xl text-white font-logo mb-3 group-hover:text-black  transition-transform duration-500 ease-in-out group-hover:-translate-y-4">Lorem Ipsum</p>
+        <p class="text-base text-color mt-4 max-w-lg group-hover:text-black  transition-transform duration-500 ease-in-out group-hover:-translate-y-4">Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
+      </div>
+        <div class="w-full lg:w-[calc(90%/3)] card-bg p-9 mt-9 py-12 group hover:bg-primary duration-150 ease-in-out   relative">
+        <h3 class="text-primary text-[28px] font-bold mb-4  group-hover:text-black   transition-transform duration-500 ease-in-out group-hover:-translate-y-4  ">02</h3>
+        <p class="font-semibold text-2xl text-white font-logo mb-3  group-hover:text-black   transition-transform duration-500 ease-in-out group-hover:-translate-y-4">Lorem Ipsum</p>
+        <p class="text-base text-color mt-4 max-w-lg  group-hover:text-black   transition-transform duration-500 ease-in-out group-hover:-translate-y-4">Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
+      </div>
+        <div class="w-full lg:w-[calc(90%/3)] card-bg p-9 mt-9 py-12 group hover:bg-primary duration-150 ease-in-out   relative">
+        <h3 class="text-primary text-[28px] font-bold mb-4   group-hover:text-black   transition-transform duration-500 ease-in-out group-hover:-translate-y-4">03</h3>
+        <p class="font-semibold text-2xl text-white font-logo mb-3  group-hover:text-black   transition-transform duration-500 ease-in-out group-hover:-translate-y-4">Lorem Ipsum</p>
+        <p class="text-base text-color mt-4 max-w-lg  group-hover:text-black   transition-transform duration-500 ease-in-out group-hover:-translate-y-4">Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
+      </div>
+     </div>
+  </div>
+</section>
+ 
+ <section class="why-us card-bg">
+ 
+  <div class="container mx-auto   py-9 px-5">
+     <p class="text-default-color text-sm font-normal  font-logo   ">MENU<span class="border-t-2 border-primary w-[9rem] inline-block ml-2"></span></p>
+     <h2 class="text-primary text-4xl font-semibold font-logo mt-2" >Check Our Tasty Menu</h2>
+       <ul class="list-none flex gap-4 justify-center mt-16 ulfilter">
+        <li class="text-lg text-primary font-logo font-medium hover:cursor-pointer all">All</li>
+        <li class="text-lg text-color font-logo font-medium hover:cursor-pointer starters">starters</li>
+        <li class="text-lg text-color font-logo font-medium hover:cursor-pointer salads">salads</li>
+        <li class="text-lg text-color font-logo font-medium hover:cursor-pointer specialty">specialty</li>
+       </ul>
+     <div class="row-col   mt-6  menufilter">
+      <div class="w-full lg:w-1/2  p-9 mt-9   flex  gap-2 items-center ">
+          <img src="./img/lobster-bisque.jpg" alt="" class="w-[80px] rounded-full  border-8 border-gray-200/10">
+          <div class="disc">
+              <div class="line1 flex items-center">
+                <h3 class="bg-black text-white font-bold text-base px-1">Lobster Bisque </h3>
+                 <span class=" ml-1 text-2xl font-semibold inline-block text-color dots">.........................................</span>
+                 <span class="text-primary font-bold text-lg px-1 bg-black price">$5.95</span>
+              </div>
+              <p class="text-base font-medium text-color">Lorem, deren, trataro, filede, nerada</p>
+          </div>
+      </div>
+
+        <div class="w-full lg:w-1/2  p-9  lg:mt-9   flex  gap-2 items-center ">
+          <img src="./img/cake.jpg" alt="" class="w-[80px] rounded-full  border-8 border-gray-200/10">
+          <div class="disc">
+              <div class="line1 flex items-center">
+                <h3 class="bg-black text-white font-bold text-base px-1">Lobster Bisque </h3>
+                 <span class=" ml-1 text-2xl font-semibold inline-block text-color dots">.........................................</span>
+                 <span class="text-primary font-bold text-lg px-1 bg-black price">$5.95</span>
+              </div>
+              <p class="text-base font-medium text-color">Lorem, deren, trataro, filede, nerada</p>
+          </div>
+      </div>
+
+        <div class="w-full lg:w-1/2  p-9    flex  gap-2 items-center ">
+          <img src="./img/mozzarella.jpg" alt="" class="w-[80px] rounded-full  border-8 border-gray-200/10">
+          <div class="disc">
+              <div class="line1 flex items-center">
+                <h3 class="bg-black text-white font-bold text-base px-1">Lobster Bisque </h3>
+                 <span class=" ml-1 text-2xl font-semibold inline-block text-color dots">.........................................</span>
+                 <span class="text-primary font-bold text-lg px-1 bg-black price">$5.95</span>
+              </div>
+              <p class="text-base font-medium text-color">Lorem, deren, trataro, filede, nerada</p>
+          </div>
+      </div>
+
+        <div class="w-full lg:w-1/2  p-9  flex  gap-2 items-center ">
+          <img src="./img/bread-barrel.jpg" alt="" class="w-[80px] rounded-full  border-8 border-gray-200/10">
+          <div class="disc">
+              <div class="line1 flex items-center">
+                <h3 class="bg-black text-white font-bold text-base px-1">Lobster Bisque </h3>
+                 <span class=" ml-1 text-2xl font-semibold inline-block text-color dots">.........................................</span>
+                 <span class="text-primary font-bold text-lg px-1 bg-black price">$5.95</span>
+              </div>
+              <p class="text-base font-medium text-color">Lorem, deren, trataro, filede, nerada</p>
+          </div>
+      </div>
+
+        <div class="w-full lg:w-1/2  p-9     flex  gap-2 items-center ">
+          <img src="./img/caesar.jpg" alt="" class="w-[80px] rounded-full  border-8 border-gray-200/10">
+          <div class="disc">
+              <div class="line1 flex items-center">
+                <h3 class="bg-black text-white font-bold text-base px-1">Lobster Bisque </h3>
+                 <span class=" ml-1 text-2xl font-semibold inline-block text-color dots">.........................................</span>
+                 <span class="text-primary font-bold text-lg px-1 bg-black price">$5.95</span>
+              </div>
+              <p class="text-base font-medium text-color">Lorem, deren, trataro, filede, nerada</p>
+          </div>
+      </div>
+
+        <div class="w-full lg:w-1/2  p-9    flex  gap-2 items-center ">
+          <img src="./img/tuscan-grilled.jpg" alt="" class="w-[80px] rounded-full  border-8 border-gray-200/10">
+          <div class="disc">
+              <div class="line1 flex items-center">
+                <h3 class="bg-black text-white font-bold text-base px-1">Lobster Bisque </h3>
+                 <span class=" ml-1 text-2xl font-semibold inline-block text-color dots">.........................................</span>
+                 <span class="text-primary font-bold text-lg px-1 bg-black price">$5.95</span>
+              </div>
+              <p class="text-base font-medium text-color">Lorem, deren, trataro, filede, nerada</p>
+          </div>
+      </div>
+
+        <div class="w-full lg:w-1/2  p-9   flex  gap-2 items-center ">
+          <img src="./img/greek-salad.jpg" alt="" class="w-[80px] rounded-full  border-8 border-gray-200/10">
+          <div class="disc">
+              <div class="line1 flex items-center">
+                <h3 class="bg-black text-white font-bold text-base px-1">Lobster Bisque </h3>
+                 <span class=" ml-1 text-2xl font-semibold inline-block text-color dots">.........................................</span>
+                 <span class="text-primary font-bold text-lg px-1 bg-black price">$5.95</span>
+              </div>
+              <p class="text-base font-medium text-color">Lorem, deren, trataro, filede, nerada</p>
+          </div>
+      </div>
+
+        <div class="w-full lg:w-1/2  p-9   flex  gap-2 items-center ">
+          <img src="./img/spinach-salad.jpg" alt="" class="w-[80px] rounded-full  border-8 border-gray-200/10">
+          <div class="disc">
+              <div class="line1 flex items-center">
+                <h3 class="bg-black text-white font-bold text-base px-1">Lobster Bisque </h3>
+                 <span class=" ml-1 text-2xl font-semibold inline-block text-color dots">.........................................</span>
+                 <span class="text-primary font-bold text-lg px-1 bg-black price">$5.95</span>
+              </div>
+              <p class="text-base font-medium text-color">Lorem, deren, trataro, filede, nerada</p>
+          </div>
+      </div>
+
+        <div class="w-full lg:w-1/2  p-9    flex  gap-2 items-center ">
+          <img src="./img/lobster-roll.jpg" alt="" class="w-[80px] rounded-full  border-8 border-gray-200/10">
+          <div class="disc">
+              <div class="line1 flex items-center">
+                <h3 class="bg-black text-white font-bold text-base px-1">Lobster Bisque </h3>
+                 <span class=" ml-1 text-2xl font-semibold inline-block text-color dots">.........................................</span>
+                 <span class="text-primary font-bold text-lg px-1 bg-black price">$5.95</span>
+              </div>
+              <p class="text-base font-medium text-color">Lorem, deren, trataro, filede, nerada</p>
+          </div>
+      </div>
+       
+     </div>
+  </div>
+</section>
+ 
+ <section class="specials">
+ 
+  <div class="container mx-auto  px-5 py-9">
+     <p class="text-default-color text-sm font-normal  font-logo   ">SPECIALS<span class="border-t-2 border-primary w-[9rem] inline-block ml-2"></span></p>
+     <h2 class="text-primary text-4xl font-semibold font-logo mt-2" >Check Our Specials</h2>
+       
+     <div class="row-col   mt-20  items-center  xl:items-start ">
+      <div class="lg:w-3/12 w-full  ">
+         <ul class="list-none  justify-center special ">
+        <li class="text-lg  p-[15px] text-white font-logo font-medium hover:cursor-pointer bg-primary  hover:bg-primary modi  lg:border-r-2 border-white hover:border-white ">Modi sit est</li>
+        <li class="text-lg p-[15px] text-white font-logo font-medium hover:cursor-pointer   hover:bg-primary unde   lg:border-r-2 border-primary   hover:border-white ">Unde praesentium sed</li>
+        <li class="text-lg p-[15px] text-white font-logo font-medium hover:cursor-pointer   hover:bg-primary pariatur lg:border-r-2 border-primary  hover:border-white  ">pariatur explicabo vel</li>
+        <li class="text-lg p-[15px] text-white font-logo font-medium hover:cursor-pointer   hover:bg-primary pariatur lg:border-r-2 border-primary  hover:border-white nost ">Nostrum qui quasi</li>
+        <li class="text-lg p-[15px] text-white font-logo font-medium hover:cursor-pointer   hover:bg-primary iusto lg:border-r-2 border-primary   hover:border-white  ">lusto ut expedita aut</li>
+       </ul>
+      </div>
+           <div class="lg:w-9/12 w-full  xl:mt-6 specialdes">
+              <div class="row-col px-8 lg:flex-row-reverse   lg:justify-end">
+                <div class="w-full lg:w-5/12 xl:w-3/12">
+                   <img src="./img/specials-1.png" alt="">
+                    
+                </div>
+                  <div class="w-full lg:w-7/12  xl:w-9/12 ">
+                   <h3 class="text-[26px] text-white  font-logo font-semibold lg:text-[22px]">Architecto ut aperiam autem id </h3>
+                    <p class="text-color   mt-4 text-lg italic lg:text-base des1">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
+                    <p class="text-color mt-4 text-lg italic lg:text-base des2 "> Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero </p>
+                </div>
+              </div>
+      </div>
+     </div>
+  </div>
+</section>
+<section class=" events events-bg   px-20 md:px-16 ">
+  <div class="container  mx-auto  ">
+      <div class="row-col  lg:gap-4  "  >
+        <div class="w-full lg:w-6/12   lg:mb-20  mt-16 lg:mx-auto  lg:pl-14 event-img">
+          <img src="" alt="" class="w-full h-full  ">
+        </div>
+
+        <div class="w-full lg:w-5/12  lg:mt-20  lg:mb-10 ">
+            <h2 class="text-3xl font-bold text-white mt-4 lg:mt-0 mb-2  font-logo lg:text-start even-head">
+              
+            </h2>
+            <p class="priceev text-2xl text-white font-bold border-b-2 border-primary inline-block mb-3"></p>
+            <p class="text-white font-normal text-base t1"></p>
+            <ul class="list-none px-0 mt-5 ul2">
+          <li class="  text-slate-300 text-base flex "> 
+            <img src="./img/Adobe Express - file.png" alt="" class="w-16 -ml-6">
+            <span class="mt-1">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+          </li>
+            <li class="  text-slate-300 text-base flex   "> 
+            <img src="./img/Adobe Express - file.png" alt="" class="w-16 -ml-6">
+                        <span class="mt-1">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+
+          </li>
+            <li class="  text-slate-300 text-base flex"> 
+            <img src="./img/Adobe Express - file.png" alt="" class="w-16 -ml-6">
+               <span class="mt-1">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+               </li>
+
+            </ul>
+            <p class="  text-slate-300 text-lg flex mt-4 mb-24 lg:mb-1 t2">
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum  
+            </p>
+        </div>
+      </div>
+         <ul class="dotsr flex justify-center gap-2 ">
+     <li class="d1 w-[0.8rem] bg-primary h-[0.8rem] rounded-full hover:cursor-pointer"></li>
+     <li class="d1 w-[0.8rem] bg-gray-400/50 h-[0.8rem] rounded-full hover:cursor-pointer"></li>
+     <li class="d1 w-[0.8rem] bg-gray-400/50 h-[0.8rem] rounded-full hover:cursor-pointer mb-8"></li>   
+     </ul>
+    </div>
+ 
+</section> 
+
+<section class=" text-white py-12 px-9">
+  <div class="max-w-5xl mx-auto px-6 mt-5">
+ 
+    <div class="mb-24">
+      <p class="text-default-color text-sm font-normal font-logo">
+        RESERVATION
+        <span class="border-t-2 border-primary w-[9rem] inline-block ml-2"></span>
+      </p>
+      <h2 class="text-primary text-4xl font-semibold font-logo mt-2">
+       Book a Table
+      </h2>
+    </div>
+ <form class="space-y-6">
+
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+    <input type="text" placeholder="Your Name" class="input-field">
+    <input type="text" placeholder="Your Phone" class="input-field">
+    <input type="email" placeholder="Your Email" class="input-field">
+    <input type="time" class="input-field">
+    <input type="date" class="input-field">
+    <input type="number" placeholder="# of People" class="input-field">
+  </div>
+
+ 
+  <textarea placeholder="Message" rows="4" class="input-field"></textarea>
+
+ 
+  <div class="text-center">
+    <button type="submit" class="px-10 py-3 rounded-full border border-primary text-white font-bold text-lg hover:bg-primary hover:text-black transition">
+      Book a Table
+    </button>
+  </div>
+</form>
+
+  </div>
+</section>
+
+<section class="test px-6 md:px-12 lg:px-20">
+  <div class="container mx-auto">
+    <p class="text-default-color text-sm font-normal font-logo uppercase">
+      Testimonials
+      <span class="border-t-2 border-primary w-[9rem] inline-block ml-2"></span>
+    </p>
+    <h2 class="text-primary text-4xl font-semibold font-logo mt-2">
+      What they're saying about us
+    </h2>
+
+    <!-- SLIDER CONTAINER -->
+    <div class="overflow-hidden relative mt-10">
+      <div id="slider" class="flex transition-transform duration-700 ease-in-out">
+        <!-- Card 1 -->
+        <div class="slide w-full sm:w-1/1 md:w-1/1 lg:w-1/3 flex-shrink-0 p-4">
+          <div class="card-bg p-6 pb-16">
+            <p class="text-xl text-primary"><i class="fa-solid fa-quote-left"></i></p>
+            <span class="text-color italic">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </span>
+            <p class="text-xl text-primary mt-2"><i class="fa-solid fa-quote-right"></i></p>
+          </div>
+          <div class="mt-4 flex items-center gap-3">
+            <img src="./img/testimonials-1.jpg" class="w-[4rem] rounded-full">
+            <div>
+              <h2 class="font-bold text-white">Saul Goodman</h2>
+              <p class="text-default-color">Ceo Founder</p>
+            </div>
+          </div>
+        </div>
+
+       
+         <div class="slide w-full sm:w-1/1 md:w-1/1 lg:w-1/3 flex-shrink-0 p-4">
+          <div class="card-bg p-6 pb-16">
+            <p class="text-xl text-primary"><i class="fa-solid fa-quote-left"></i></p>
+            <span class="text-color italic">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </span>
+            <p class="text-xl text-primary mt-2"><i class="fa-solid fa-quote-right"></i></p>
+          </div>
+          <div class="mt-4 flex items-center gap-3">
+            <img src="./img/testimonials-2.jpg" class="w-[4rem] rounded-full">
+            <div>
+              <h2 class="font-bold text-white">Saul Goodman</h2>
+              <p class="text-default-color">Ceo Founder</p>
+            </div>
+          </div>
+        </div>
+         <div class="slide w-full sm:w-1/1 md:w-1/1 lg:w-1/3 flex-shrink-0 p-4">
+          <div class="card-bg p-6 pb-16">
+            <p class="text-xl text-primary"><i class="fa-solid fa-quote-left"></i></p>
+            <span class="text-color italic">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </span>
+            <p class="text-xl text-primary mt-2"><i class="fa-solid fa-quote-right"></i></p>
+          </div>
+          <div class="mt-4 flex items-center gap-3">
+            <img src="./img/testimonials-4.jpg" class="w-[4rem] rounded-full">
+            <div>
+              <h2 class="font-bold text-white">Saul Goodman</h2>
+              <p class="text-default-color">Ceo Founder</p>
+            </div>
+          </div>
+        </div>
+         <div class="slide w-full sm:w-1/1 md:w-1/1 lg:w-1/3 flex-shrink-0 p-4">
+          <div class="card-bg p-6 pb-16">
+            <p class="text-xl text-primary"><i class="fa-solid fa-quote-left"></i></p>
+            <span class="text-color italic">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </span>
+            <p class="text-xl text-primary mt-2"><i class="fa-solid fa-quote-right"></i></p>
+          </div>
+          <div class="mt-4 flex items-center gap-3">
+            <img src="./img/testimonials-5.jpg" class="w-[4rem] rounded-full">
+            <div>
+              <h2 class="font-bold text-white">Saul Goodman</h2>
+              <p class="text-default-color">Ceo Founder</p>
+            </div>
+          </div>
+        </div>
+         <div class="slide w-full sm:w-1/1 md:w-1/1 lg:w-1/3 flex-shrink-0 p-4">
+          <div class="card-bg p-6 pb-16">
+            <p class="text-xl text-primary"><i class="fa-solid fa-quote-left"></i></p>
+            <span class="text-color italic">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </span>
+            <p class="text-xl text-primary mt-2"><i class="fa-solid fa-quote-right"></i></p>
+          </div>
+          <div class="mt-4 flex items-center gap-3">
+            <img src="./img/testimonials-3.jpg" class="w-[4rem] rounded-full">
+            <div>
+              <h2 class="font-bold text-white">Saul Goodman</h2>
+              <p class="text-default-color">Ceo Founder</p>
+            </div>
+          </div>
+        </div>
+             <div class="slide w-full sm:w-1/1 md:w-1/1 lg:w-1/3 flex-shrink-0 p-4">
+          <div class="card-bg p-6 pb-16">
+            <p class="text-xl text-primary"><i class="fa-solid fa-quote-left"></i></p>
+            <span class="text-color italic">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </span>
+            <p class="text-xl text-primary mt-2"><i class="fa-solid fa-quote-right"></i></p>
+          </div>
+          <div class="mt-4 flex items-center gap-3">
+            <img src="./img/testimonials-1.jpg" class="w-[4rem] rounded-full">
+            <div>
+              <h2 class="font-bold text-white">Saul Goodman</h2>
+              <p class="text-default-color">Ceo Founder</p>
+            </div>
+          </div>
+        </div>
+
+       
+         <div class="slide w-full sm:w-1/1 md:w-1/1 lg:w-1/3 flex-shrink-0 p-4">
+          <div class="card-bg p-6 pb-16">
+            <p class="text-xl text-primary"><i class="fa-solid fa-quote-left"></i></p>
+            <span class="text-color italic">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </span>
+            <p class="text-xl text-primary mt-2"><i class="fa-solid fa-quote-right"></i></p>
+          </div>
+          <div class="mt-4 flex items-center gap-3">
+            <img src="./img/testimonials-2.jpg" class="w-[4rem] rounded-full">
+            <div>
+              <h2 class="font-bold text-white">Saul Goodman</h2>
+              <p class="text-default-color">Ceo Founder</p>
+            </div>
+          </div>
+        </div>
+         <div class="slide w-full sm:w-1/1 md:w-1/1 lg:w-1/3 flex-shrink-0 p-4">
+          <div class="card-bg p-6 pb-16">
+            <p class="text-xl text-primary"><i class="fa-solid fa-quote-left"></i></p>
+            <span class="text-color italic">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </span>
+            <p class="text-xl text-primary mt-2"><i class="fa-solid fa-quote-right"></i></p>
+          </div>
+          <div class="mt-4 flex items-center gap-3">
+            <img src="./img/testimonials-4.jpg" class="w-[4rem] rounded-full">
+            <div>
+              <h2 class="font-bold text-white">Saul Goodman</h2>
+              <p class="text-default-color">Ceo Founder</p>
+            </div>
+          </div>
+        </div>
+         <div class="slide w-full sm:w-1/1 md:w-1/1 lg:w-1/3 flex-shrink-0 p-4">
+          <div class="card-bg p-6 pb-16">
+            <p class="text-xl text-primary"><i class="fa-solid fa-quote-left"></i></p>
+            <span class="text-color italic">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </span>
+            <p class="text-xl text-primary mt-2"><i class="fa-solid fa-quote-right"></i></p>
+          </div>
+          <div class="mt-4 flex items-center gap-3">
+            <img src="./img/testimonials-5.jpg" class="w-[4rem] rounded-full">
+            <div>
+              <h2 class="font-bold text-white">Saul Goodman</h2>
+              <p class="text-default-color">Ceo Founder</p>
+            </div>
+          </div>
+        </div>
+         <div class="slide w-full sm:w-1/1 md:w-1/1 lg:w-1/3 flex-shrink-0 p-4">
+          <div class="card-bg p-6 pb-16">
+            <p class="text-xl text-primary"><i class="fa-solid fa-quote-left"></i></p>
+            <span class="text-color italic">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </span>
+            <p class="text-xl text-primary mt-2"><i class="fa-solid fa-quote-right"></i></p>
+          </div>
+          <div class="mt-4 flex items-center gap-3">
+            <img src="./img/testimonials-3.jpg" class="w-[4rem] rounded-full">
+            <div>
+              <h2 class="font-bold text-white">Saul Goodman</h2>
+              <p class="text-default-color">Ceo Founder</p>
+            </div>
+          </div>
+        </div>
+         
+      </div>
+
+      <!-- DOTS -->
+    <div class="flex justify-center gap-2 mt-6 ">
+  <span class="dot w-3 h-3 rounded-full bg-primary border-2 border-primary cursor-pointer"></span>
+  <span class="dot w-3 h-3 rounded-full bg-transparent border-2 border-primary cursor-pointer"></span>
+  <span class="dot w-3 h-3 rounded-full bg-transparent border-2 border-primary cursor-pointer"></span>
+  <span class="dot w-3 h-3 rounded-full bg-transparent border-2 border-primary cursor-pointer"></span>
+  <span class="dot w-3 h-3 rounded-full bg-transparent border-2 border-primary cursor-pointer"></span>
+     </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery mt-12">
+  <div class="container mx-auto px-4">
+    <div class="mb-8">
+      <p class="text-default-color text-sm font-normal font-logo uppercase">
+        Testimonials
+        <span class="border-t-2 border-primary w-36 inline-block ml-2"></span>
+      </p>
+      <h2 class="text-primary text-4xl font-semibold font-logo mt-2">
+        What they're saying about us
+      </h2>
+    </div>
+
+    <div class="flex flex-wrap -mx-1.5">
+      <div class="lg:w-3/12 sm:w-4/12 w-full p-[0.2rem] group overflow-hidden">
+        <img src="./img/gallery-1.jpg" alt=""
+             class="w-full h-64 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110">
+      </div>
+      <div class="lg:w-3/12 sm:w-4/12 w-full  p-[0.2rem] group overflow-hidden">
+        <img src="./img/gallery-2.jpg" alt=""
+             class="w-full h-64 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110">
+      </div>
+      <div class="lg:w-3/12 sm:w-4/12 w-full  p-[0.2rem] group overflow-hidden">
+        <img src="./img/gallery-3.jpg" alt=""
+             class="w-full h-64 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110">
+      </div>
+      <div class="lg:w-3/12 sm:w-4/12 w-full  p-[0.2rem] group overflow-hidden">
+        <img src="./img/gallery-4.jpg" alt=""
+             class="w-full h-64 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110">
+      </div>
+      <div class="lg:w-3/12 sm:w-4/12 w-full  p-[0.2rem] group overflow-hidden">
+        <img src="./img/gallery-5.jpg" alt=""
+             class="w-full h-64 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110">
+      </div>
+      <div class="lg:w-3/12 sm:w-4/12 w-full  p-[0.2rem] group overflow-hidden">
+        <img src="./img/gallery-6.jpg" alt=""
+             class="w-full h-64 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110">
+      </div>
+      <div class="lg:w-3/12 sm:w-4/12 w-full  p-[0.2rem] group overflow-hidden">
+        <img src="./img/gallery-7.jpg" alt=""
+             class="w-full h-64 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110">
+      </div>
+      <div class="lg:w-3/12 sm:w-4/12 w-full  p-[0.2rem] group overflow-hidden">
+        <img src="./img/gallery-8.jpg" alt=""
+             class="w-full h-64 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110">
+      </div>
+    </div>
+  </div>
+</section>
+<section  id="chefs">
+  <div class="container mx-auto mt-16   ">
+       <p class="text-default-color text-sm font-normal font-logo uppercase">
+          Team
+      <span class="border-t-2 border-primary w-[9rem] inline-block ml-2"></span>
+    </p>
+    <h2 class="text-primary text-4xl font-semibold font-logo mt-2">
+      Necessitatibus eius consequatur
+    </h2>
+    <div class="row-col mt-9  ">
+        <div class="w-full lg:w-1/3 flex justify-center p-5 relative group">
+  <img src="./img/chefs-2.jpg" alt="" class="object-cover rounded-lg">
+   
+  <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/0 opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg"></div>
+  
+  
+  <div class="absolute inset-0 flex flex-col justify-end items-center text-center pb-5 space-y-2">
+    <p class="text-xl font-medium text-white font-logo opacity-0 translate-y-6 group-hover:opacity-100 group-hover:-translate-y-5 transition-all duration-500 delay-100">
+      Walter White
+    </p>
+    <p class="text-white italic opacity-0 translate-y-6 group-hover:opacity-100 group-hover:-translate-y-5 transition-all duration-500 delay-200">
+      Master Chef
+    </p>
+    <div class="logos flex gap-2 justify-center opacity-0 translate-y-6 group-hover:opacity-100 group-hover:-translate-y-6 transition-all duration-500 delay-300">
+      <a href="" class="text-xl text-white"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="" class="text-xl text-white"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="" class="text-xl text-white"><i class="fa-brands fa-instagram"></i></a>
+      <a href="" class="text-xl text-white"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</div>
+   <div class="w-full lg:w-1/3 flex justify-center p-5 relative group">
+  <img src="./img/chefs-1.jpg" alt="" class="object-cover rounded-lg">
+   
+  <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/0 opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg"></div>
+  
+  
+  <div class="absolute inset-0 flex flex-col justify-end items-center text-center pb-5 space-y-2">
+    <p class="text-xl font-medium text-white font-logo opacity-0 translate-y-6 group-hover:opacity-100 group-hover:-translate-y-5 transition-all duration-500 delay-100">
+      Walter White
+    </p>
+    <p class="text-white italic opacity-0 translate-y-6 group-hover:opacity-100 group-hover:-translate-y-5 transition-all duration-500 delay-200">
+      Master Chef
+    </p>
+    <div class="logos flex gap-2 justify-center opacity-0 translate-y-6 group-hover:opacity-100 group-hover:-translate-y-6 transition-all duration-500 delay-300">
+      <a href="" class="text-xl text-white"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="" class="text-xl text-white"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="" class="text-xl text-white"><i class="fa-brands fa-instagram"></i></a>
+      <a href="" class="text-xl text-white"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</div>
+  <div class="w-full lg:w-1/3 flex justify-center p-5 relative group">
+  <img src="./img/chefs-3.jpg" alt="" class="object-cover rounded-lg">
+   
+  <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/0 opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg"></div>
+  
+  
+  <div class="absolute inset-0 flex flex-col justify-end items-center text-center pb-5 space-y-2">
+    <p class="text-xl font-medium text-white font-logo opacity-0 translate-y-6 group-hover:opacity-100 group-hover:-translate-y-5 transition-all duration-500 delay-100">
+      Walter White
+    </p>
+    <p class="text-white italic opacity-0 translate-y-6 group-hover:opacity-100 group-hover:-translate-y-5 transition-all duration-500 delay-200">
+      Master Chef
+    </p>
+    <div class="logos flex gap-2 justify-center opacity-0 translate-y-6 group-hover:opacity-100 group-hover:-translate-y-6 transition-all duration-500 delay-300">
+      <a href="" class="text-xl text-white"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="" class="text-xl text-white"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="" class="text-xl text-white"><i class="fa-brands fa-instagram"></i></a>
+      <a href="" class="text-xl text-white"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+<section class="contact mb-10 card-bg">
+    
+     <p class="text-default-color text-sm font-normal font-logo uppercase ml-16">
+          Team
+      <span class="border-t-2 border-primary w-[9rem] inline-block ml-2"></span>
+    </p>
+    <h2 class="text-primary text-4xl font-semibold font-logo mt-2 ml-16">
+      Necessitatibus eius consequatur
+    </h2>
+   <iframe 
+    class="w-full h-96 mt-8" 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019620623692!2d-122.41941548468165!3d37.77492927975961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064c9f0a8e9%3A0x9c18b82a7f0c2f38!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2seg!4v1692484698290!5m2!1sen!2seg" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+  
+  <div class="container mx-auto mt-12  ">
+   <div class="row-col">
+    <div class="w-full lg:w-1/2">
+    <div class="flex mb-6">
+       <div class="mr-5  flex justify-center items-center bg-primary  rounded-lg px-6"><i class="fa-solid fa-location-dot text-white text-lg"></i></div>
+        <div class="disco text-start">
+          <p class="text-xl font-medium text-white font-logo ">Location</p>
+          <p class="text-default-color ">A108 Adam Street, New York, NY 535022</p>
+        </div>
+    </div>
+    <div class="flex mb-6 items-center">
+       <div class="mr-5  flex justify-center items-center bg-primary  py-3  rounded-lg px-6"><i class="fa-solid fa-phone  text-white text-lg"></i></div>
+        <div class="disco text-start">
+          <p class="text-xl font-medium text-white font-logo ">Open Hours</p>
+          <p class="text-default-color ">AMonday-Saturday: <br>
+              11:00 AM - 2300 PM</p>
+        </div>
+    </div>
+    <div class="flex mb-6">
+       <div class="mr-5  flex justify-center items-center bg-primary  rounded-lg px-6"><i class="fa-solid fa-phone  text-white text-lg"></i></div>
+        <div class="disco text-start">
+          <p class="text-xl font-medium text-white font-logo ">Call Us</p>
+          <p class="text-default-color ">+1 5589 55488 55</p>
+        </div>
+    </div>
+    <div class="flex mb-6">
+       <div class="mr-5  flex justify-center items-center bg-primary  rounded-lg px-6"><i class="fa-regular fa-envelope text-white text-lg"></i></div>
+        <div class="disco text-start">
+          <p class="text-xl font-medium text-white font-logo ">Email Us</p>
+          <p class="text-default-color ">info@example.com</p>
+        </div>
+    </div>
+    
+  </div>
+  <div class="w-full lg:w-1/2">
+       <form class="space-y-6">
+
+  
+  <div class="grid grid-cols-1 md:grid-cols-2  gap-6">
+    <input type="text" placeholder="Your Name" class="input-field">
+    <input type="email" placeholder="Your Email" class="input-field">
+  </div>
+
+   <input type="text" class="input-field" placeholder="subject">
+  <textarea placeholder="Message" rows="4" class="input-field"></textarea>
+
+ 
+  <div class="text-center  ">
+    <button type="submit" class="px-10 py-3 rounded-full border border-primary text-white font-bold text-lg hover:bg-primary   transition mb-9">
+       Send Message
+    </button>
+  </div>
+</form>
+
+  </div>
+   </div>
+ 
+   </div>
+ 
+</section>
+ 
+<footer>
+    <div class="row-col px-7">
+      <div class="md:w-3/12 w-full mt-5">
+        <h2 class="text-white font-bold font-logo text-xl mb-5">Restaurantly</h2>
+        <p class="text-sm text-default-color">A108 Adam Street</p>
+        <p class="text-sm text-default-color mb-3">New York, NY 535022</p>
+        <p class="text-sm text-default-color mb-3 font-semibold">Phone: +1 5589 55488 55</p>
+        <p class="text-sm text-default-color mb-3 font-semibold">Email: info@example.com</p>
+       <div class="logos flex gap-3">
+      <a href="" class="text-lg text-white rounded-full border-2  w-9 h-9 pl-1 "><i class="fa-brands fa-x-twitter text-center"></i></a>
+      <a href="" class="text-xl text-white rounded-full border-2  w-9 h-9 pl-2 " ><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="" class="text-xl text-white rounded-full border-2  w-9 h-9 pl-1 "><i class="fa-brands fa-instagram"></i></a>
+      <a href="" class="text-xl text-white rounded-full border-2  w-9 h-9 pl-1 "><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+      </div>
+        <div class="md:w-3/12 w-full mt-5">
+        <h2 class="text-white font-bold font-logo text-xl mb-5">Useful Links</h2>
+           <div class="logos flex flex-col ">
+      <a href="" class="text-sm text-default-color ">Home</a>
+      <a href="" class="text-sm text-default-color" >About Us</a>
+      <a href="" class="text-sm text-default-color ">Services</a>
+      <a href="" class="text-sm text-default-color">Terms of services</a>
+      <a href="" class="text-sm text-default-color ">privacy policy</a>
+    </div>
+      </div>
+         <div class="md:w-3/12 w-full mt-5">
+        <h2 class="text-white font-bold font-logo text-xl mb-5">Useful Links</h2>
+           <div class="logos flex flex-col  ">
+      <a href="" class="text-sm text-default-color">Home</a>
+      <a href="" class="text-sm text-default-color " >About Us</a>
+      <a href="" class="text-sm text-default-color ">Services</a>
+      <a href="" class="text-sm text-default-color ">Terms of services</a>
+      <a href="" class="text-sm text-default-color ">privacy policy</a>
+    </div>
+      </div>
+        <div class="md:w-3/12 w-full mt-5">
+        <h2 class="text-white font-bold font-logo text-xl mb-4  mt-5 lg:mt-0">Our Newsletter</h2>
+        <p class="text-sm text-default-color">Subscribe to our newsletter and receive the latest news about our products and services!</p>
+        
+      
+           <div class="  w-[86%] mt-10 relative">
+     <input 
+    type="text" 
+    placeholder=" "
+    class="w-full pl-4 pr-20 py-2 border bg-transparent border-gray-300 rounded-md focus:outline-none">
+  
+  <div class="absolute top-0 right-0 h-full w-20 bg-primary flex items-center justify-center rounded-r-md text-black ">
+    Subscribe
+  </div>
+   
+</div>
+       </div>
+    </div>
+            <p class="text-gray-500 border-b-[0.5px] w-full h-3"></p> 
+
+   <p class="mt-9 text-default-color text-sm text-center max-w-md mx-auto">© Copyright Restaurantly All Rights Reserved
+
+Designed by <span class="text-primary">BootstrapMade </span>Distributed by  <span class="text-primary">ThemeWagon</span></p>
+</footer>
+<script src="./script/main.js"></script>
+</body>
+</html>
